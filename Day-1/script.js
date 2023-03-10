@@ -61,3 +61,28 @@ if(N %2 == 0 && N>=6 && N<=20){
 
     
 }
+
+
+********************DAY 2: Conditional Statements: Switch-********************
+
+
+
+
+
+  switch(s[0]){
+    case ('a' || 'e' || 'i' || 'o' || 'u'):
+        return 'A';
+        break;
+       
+        case ('b' || 'c' || 'd' || 'f' || 'g'):
+        return 'B';
+        break;
+
+        case ('h' || 'j' || 'k' || 'l' || 'm'):
+        return 'C';
+        break;
+
+        case ('z' || 'n' || 'p' || 'q' || 'r' || 's' || 't' || 'v' || 'w' || 'x' || 'y'):
+        return 'D';
+        break;
+  }
