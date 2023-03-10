@@ -1,27 +1,4 @@
-'use strict';
-
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
-
-let inputString = '';
-let currentLine = 0;
-
-process.stdin.on('data', inputStdin => {
-    inputString += inputStdin;
-});
-
-process.stdin.on('end', _ => {
-    inputString = inputString.trim().split('\n').map(string => {
-        return string.trim();
-    });
-    
-    main();    
-});
-
-function readLine() {
-    return inputString[currentLine++];
-}
-
+********************DAY1********************
 /**
 *   Calculate the area of a rectangle.
 *
@@ -52,3 +29,19 @@ function getPerimeter(length, width) {
     return perimeter;
 }
 
+
+***************Day 3: Intro to Conditional Statements************
+function main() {
+    const N = parseInt(readLine().trim(), 10);
+    
+
+
+if(N % 2 == 0 && 2<=N && N<=5 || N>20){
+    console.log("Not Weird")
+}
+ if( (N % 2 !==0) || (N % 2 ==0) && N>=6 && N<= 20 ){
+    console.log("Weird")
+}
+
+    
+}
