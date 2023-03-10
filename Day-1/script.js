@@ -41,7 +41,7 @@ function getPerimeter(length, width) {
 }
 
 
-***************Day 3: Intro to Conditional Statements************
+***************DAY 3: Intro to Conditional Statements************
 function main() {
     const N = parseInt(readLine().trim(), 10);
     
