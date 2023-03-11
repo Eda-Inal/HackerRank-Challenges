@@ -9,7 +9,7 @@
 
 
 
-********************DAY1********************
+********************DAY1 ********************
 /**
 *   Calculate the area of a rectangle.
 *
@@ -40,28 +40,24 @@ function getPerimeter(length, width) {
     return perimeter;
 }
 
+********************DAY 1 Functions ******************************
+/*
+ * Create the function factorial here
+ */
 
-***************DAY 3: Intro to Conditional Statements************
-function main() {
-    const N = parseInt(readLine().trim(), 10);
+function factorial(n){
+    if(n>1){
+          return n* factorial(n-1)
+    } 
+   else if(n==1){
+       return 1;
+   }
+      
+      
+  }
     
 
-
-if(N % 2 !==0  ){
-    console.log("Weird")
-}
-if(N % 2 == 0 && N>20){
-    console.log("Not Weird")
-} else if(N%2 ==0 && N >=2 && N<=5){
-    console.log("Not Weird")
-}
-if(N %2 == 0 && N>=6 && N<=20){
-    console.log("Weird")
-}
-
-    
-}
-
+factorial(4)
 
 ********************DAY 2: Conditional Statements: Switch-********************
 
@@ -86,3 +82,29 @@ if(N %2 == 0 && N>=6 && N<=20){
         return 'D';
         break;
   }
+
+
+
+***************DAY 3: Intro to Conditional Statements************
+function main() {
+    const N = parseInt(readLine().trim(), 10);
+    
+
+
+if(N % 2 !==0  ){
+    console.log("Weird")
+}
+if(N % 2 == 0 && N>20){
+    console.log("Not Weird")
+} else if(N%2 ==0 && N >=2 && N<=5){
+    console.log("Not Weird")
+}
+if(N %2 == 0 && N>=6 && N<=20){
+    console.log("Weird")
+}
+
+    
+}
+
+
+
