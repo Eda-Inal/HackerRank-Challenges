@@ -43,7 +43,8 @@ function getPerimeter(length, width) {
 ********************DAY 1 Functions ******************************
 /*
  * Create the function factorial here
- */
+ */ 
+    /******** METHOD 1 *******/
 
 function factorial(n){
     if(n>1){
@@ -58,6 +59,30 @@ function factorial(n){
     
 
 factorial(4)
+
+/******** METHOD 2 *******/
+
+    function factorial(n){
+    if(n>1){
+         let carpma = 1
+          for(let i = 1; i <= n ; i++){
+             carpma = carpma * i
+            
+          }
+          return carpma
+    } 
+   else if(n==1){
+       return 1;
+   }
+      
+      
+  }
+    
+
+factorial(4)
+
+
+
 
 ********************DAY 2: Conditional Statements: Switch-********************
 
