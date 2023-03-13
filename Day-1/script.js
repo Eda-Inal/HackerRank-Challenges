@@ -1,4 +1,4 @@
-******************DAY0****************
+******************************DAY0**********************************
     function greeting(parameterVariable) {
     // This line prints 'Hello, World!' to the console:
     console.log('Hello, World!');
@@ -9,7 +9,7 @@
 
 
 
-********************DAY1 ********************
+****************************DAY1 *****************************
 /**
 *   Calculate the area of a rectangle.
 *
@@ -110,7 +110,7 @@ factorial(4)
 
 
 
-***************DAY 3: Intro to Conditional Statements************
+******************************DAY 3: Intro to Conditional Statements***********************
 function main() {
     const N = parseInt(readLine().trim(), 10);
     
