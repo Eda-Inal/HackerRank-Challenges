@@ -131,5 +131,21 @@ if(N %2 == 0 && N>=6 && N<=20){
     
 }
 
+********************Day 3: Arrays*************************
+
+
+
+let unique = [];
+function getSecondLargest(nums) {
+    // Complete the function
+     nums.sort(function(a, b){return a - b}); //ilk olarak büyükten küçüğe sıraladık. yeni dizi [2,3,5,6,6] oldu
+     for(let i = 0; i<nums.length; i++){
+        if( !(unique.includes(nums[i]))){ // eğer unique nums[i]deki değerleri içermiyorsa içine pushladık. örneğin nums[3] = 6yı içermedi ve pushladık.
+            unique.push(nums[i]); // ama nums[4] = 6 ve onu içerdi o zaman nums[4]ü pushlayamadık. unique = [2,3,5,6] oldu.
+        }
+    } 
+    return unique[unique.length -2] // unique.length - 1 en son değeri veriyordu bir önceki değer için 1 daha çıkardık.
+}
+
 
 
