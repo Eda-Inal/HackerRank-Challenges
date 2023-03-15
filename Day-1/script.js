@@ -132,8 +132,21 @@ if(N %2 == 0 && N>=6 && N<=20){
 }
 
 ********************Day 3: Arrays*************************
+    
+    //Method 1 :
+    
+    function getSecondLargest(nums) {
+    // Complete the function
+    nums.sort(function(a, b){return a - b}); // [2,3,5,6,6]
+    
+    let uniquenums = [...new Set(nums)]; // new Set aynı olan değerleri ayıklıyor. yeni dizi nums  = [2,3,5,6]
+    return uniquenums[uniquenums.length -2]
+    
+    
+}
 
 
+// Method2:
 
 let unique = [];
 function getSecondLargest(nums) {
