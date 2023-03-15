@@ -110,6 +110,27 @@ factorial(4)
 
 
 
+
+***************************************Day 2: Loops***********************************
+
+
+
+function vowelsAndConsonants(s) {
+    let array = s.split('');
+    for(let i = 0; i< array.length; i++){
+        if("aeiou".includes(array[i])){
+            console.log(array[i])
+        } 
+    }
+     for(let i = 0; i< array.length; i++){
+        if(!("aeiou".includes(array[i]))){
+            console.log(array[i])
+        } 
+    }
+    
+}
+
+
 ******************************DAY 3: Intro to Conditional Statements***********************
 function main() {
     const N = parseInt(readLine().trim(), 10);
