@@ -137,10 +137,10 @@ if(N %2 == 0 && N>=6 && N<=20){
     
     function getSecondLargest(nums) {
     // Complete the function
-    nums.sort(function(a, b){return a - b}); // [2,3,5,6,6]
+    nums.sort(function(a, b){return a - b}); // [2,3,5,6,6] 
     
     let uniquenums = [...new Set(nums)]; // new Set aynı olan değerleri ayıklıyor. yeni dizi nums  = [2,3,5,6]
-    return uniquenums[uniquenums.length -2]
+    return uniquenums[uniquenums.length -2] // büyükten küçüğe sıralasaydık indexi[1] olarak alırdık
     
     
 }
@@ -148,17 +148,18 @@ if(N %2 == 0 && N>=6 && N<=20){
 
 // Method2:
 
-let unique = [];
+let unique = []
 function getSecondLargest(nums) {
     // Complete the function
-     nums.sort(function(a, b){return a - b}); //ilk olarak büyükten küçüğe sıraladık. yeni dizi [2,3,5,6,6] oldu
-     for(let i = 0; i<nums.length; i++){
-        if( !(unique.includes(nums[i]))){ // eğer unique nums[i]deki değerleri içermiyorsa içine pushladık. örneğin nums[3] = 6yı içermedi ve pushladık.
-            unique.push(nums[i]); // ama nums[4] = 6 ve onu içerdi o zaman nums[4]ü pushlayamadık. unique = [2,3,5,6] oldu.
-        }
+    
+     nums.sort(function(a, b){return b-a}); // bu sefer büyükten küçüğe sıralandı
+     for(let i = 0; i<nums.length; i++){ 
+        if( !(unique.includes(nums[i]))){ // tek tek dizi değerleri içeriyor mu diye bakıldı. dizinin içeriği boştu o yüzden eklendiler ama aynı değerden sadece 1 i eklenebildi
+            unique.push(nums[i]);  //içerisinde olmayan değerler pushlandı. yani 6 değeri 2.kez yeni diziye aktarılmadı
     } 
-    return unique[unique.length -2] // unique.length - 1 en son değeri veriyordu bir önceki değer için 1 daha çıkardık.
-}
-
+    
+    }return unique[1] 
+    }
+    
 
 
